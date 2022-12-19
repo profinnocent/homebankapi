@@ -1,0 +1,178 @@
+# =========================================================================================
+# USERS APIs
+# ===========================================================================================
+
+###
+#Read GET: returns all users
+GET http://localhost/aptech/homebankapi/api/users/read.php
+
+
+
+
+###
+#Read one GET: returns a specific user
+GET http://localhost/aptech/homebankapi/api/users/read.php?id=1
+
+
+
+
+###
+#Add a new user to the database
+POST http://localhost/aptech/homebankapi/api/users/insert.php
+
+{
+    "firstname": "Amaka",
+    "lastname": "Oha",
+    "email": "amaka@gmail.com",
+    "password": "amaka1000"
+}
+
+
+
+
+###
+#UPDATE PUT: Updates a specific record
+# Add the data you want to update on the payload
+PUT http://localhost/aptech/homebankapi/api/users/update.php
+
+{
+    "id":1,
+    "lastname":"Abas"
+}
+
+
+
+
+###
+#DELETE : Deletes a specific user from db
+DELETE http://localhost/aptech/homebankapi/api/users/delete.php
+
+{
+    "id":3
+}
+
+
+
+
+
+
+
+# =========================================================================================
+# TRANSACTIONS APIs
+# ===========================================================================================
+
+###
+#Read GET: returns all users
+GET http://localhost/aptech/homebankapi/api/transactions/read.php
+
+
+
+
+###
+#Read one GET: returns a specific user
+GET http://localhost/aptech/homebankapi/api/transactions/read.php?id=2
+
+
+
+
+###
+#INSERT / ADD a new user to the database
+POST http://localhost/aptech/homebankapi/api/transactions/insert.php
+
+{
+    "user_id": 8,
+    "trans_type": "Deposit",
+    "trans_amount": 500
+}
+
+
+
+
+###
+#UPDATE PUT: Updates a specific record
+# Add the data you want to update on the payload
+PUT http://localhost/aptech/homebankapi/api/transactions/update.php
+
+{
+    "trans_id":13,
+    "trans_status": "Successful"
+}
+
+
+
+
+###
+#DELETE : Deletes a specific user from db
+DELETE http://localhost/aptech/homebankapi/api/transactions/delete.php
+
+{
+    "trans_id":3
+}
+
+
+
+
+
+
+
+
+# =========================================================================================
+# POSTs APIs
+# ===========================================================================================
+
+###
+#Read GET: returns all users
+GET http://localhost/aptech/homebankapi/api/posts/read.php
+
+
+
+
+###
+#Read one GET: returns a specific user
+GET http://localhost/aptech/homebankapi/api/posts/read.php?post_id=2
+
+
+
+
+###
+#Add a new user to the database
+POST http://localhost/aptech/homebankapi/api/posts/insert.php
+
+{
+    "title":"Post 5",
+    "body":"This is Post 5",
+    "author_id": 6
+}
+
+
+
+
+###
+#Upadet PUT: Updates a specific record
+# Add the data you want to update on the payload
+PUT http://localhost/aptech/homebankapi/api/posts/update.php
+
+{
+    "post_id": 5,
+    "body": "This is Post 6"
+}
+
+
+
+
+###
+#DELETE : Deletes a specific user from db
+DELETE http://localhost/aptech/homebankapi/api/posts/delete.php
+
+{
+    "post_id": "4"
+}
+
+
+
+
+
+
+###
+#Read one GET: returns a specific user
+GET http://localhost/aptech/homebankapi/api/users/read/3
